@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>    
+<script>
+
+$(function() {
+    $( ".sortable" ).sortable({
+      connectWith: ".connectedSortable",
+    }).disableSelection();
+  });
+   
+  
+  $(document).ready(function() {
+  $('.add-button').click(function() {
+    if (!$('#new_text').val()) {
+      alert('Enter a valid task!');
+    }
+    else if($('#new_text').val()) {
+      var txtNewItem = $('#new_text').val();
+        $(this).closest('div.container').find('ul:first').append('<li class="card">'+txtNewItem+'</li>');
+    }
+  })
+  });
+
+
+
+</script>
+    
+<body> 
+  <h2 class="topnav text-center">KANBAN BOARD</h2>
+ 
+<div class="container">
+  
+
+  <div class="link-div">
+    <input class="form-control" placeholder="add a new task" style="border:solid 1px black; margin-top: 40px";  type="text" id="new_text" value=""/>
+
+    <input type="button" name="btnAddNew" style="margin-top:20px; background-color:#fceef5;" value="Add Task" class="add-button"/>
+</div>
+
+
+  <div class="card-deck">
+      
+    <div class="card" style="background-color:#e05297;">
+        <h4 class="card-title text-center">Backlog</h4>
+      <div class="card-body text-center">
+        <ul  class="sortable connectedSortable">
+            <li class="card">Measure Load performance of site</li>
+            <li class="card">prepare advertisement </li>
+            <li class="card">load database with customer data</li>
+          </ul>
+          
+          
+      </div>
+    </div>
+    <div class="card " style="background-color:#ea86b6;">
+        <h4 class="card-title text-center">Todo</h4>
+      <div class="card-body text-center">
+        <ul class="sortable connectedSortable">
+            <li class="card">intergrate git commit</li>
+            <li class="card">feature-set commit</li>
+            <li class="card">activity </li>
+          </ul>
+      </div>
+    </div>
+    <div class="card " style="background-color:#f3bad6;">
+        <h4 class="card-title text-center">In Progress</h4>
+      <div class="card-body text-center">
+        <ul class="sortable connectedSortable">
+            <li class="card">documentaion</li>
+            <li class="card">report</li>
+            <li class="card">audit </li>
+          </ul>
+         
+      </div>
+    </div>
+    <div class="card" style="background-color:#fceef5;">
+        <h4 class="card-title text-center">Done</h4>
+      <div class="card-body text-center">
+        <ul class="sortable connectedSortable">
+            <li class="card">report user story</li>
+            <li class="card">report</li>
+            <li class="card"></li>
+          </ul>
+      </div>
+    </div>  
+  </div>
+</div>
+</div>
+</body>
+</html>
