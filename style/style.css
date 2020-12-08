@@ -1,7 +1,104 @@
 body{
     overflow-x: hidden;
-    background-color: #e8e8e8;
+    background-color: black;
 }
+.topnav{
+    width:100%;
+    height:   40px;
+    text-shadow: 10px 10px 8px #888888;
+    width: 100%;
+        height: 50px;
+        float: left;
+        color: #fff;
+        font-size: 20px;
+        padding:10px;
+        font-weight: 400;
+        text-indent: 18px;
+        padding: 0 60px 0 0;
+        background: rgba(161, 157, 157, 0.2);
+        border-radius: 5px 25px 25px 5px;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+      
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+#new_text{
+        width: 100%;
+        height: 50px;
+        float: left;
+        color: #fff;
+        font-size: 20px;
+        padding:10px;
+        font-weight: 400;
+        text-indent: 18px;
+        padding: 0 60px 0 0;
+        background: rgba(161, 157, 157, 0.2);
+        border-radius: 5px 25px 25px 5px;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+      
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+   
+    .add-button{
+      width: 100%;
+      height: 50px;
+      text-indent: 18px;
+      border-radius: 25px;
+      background: #fff;
+      border: 0px;
+      box-shadow: none;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+       }
+
+    .lili{
+        text-align: center;
+        width: 100%;
+        height: 120PX;
+       margin-bottom: 30px;
+       background-color:white;
+       outline:none;
+       box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+       
+    }
+
+
+    .card-title{
+        width: 90%;
+        height: 40px;
+        background-color: #bbbfca;
+    
+        margin-top: 4px;
+        text-align: center;
+    }
+
+    .card-title:hover{
+       
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
+    }
+
+
+
+    .del{
+        font-weight: bolder;
+        border:none;
+        background-color: WHITE;
+
+
+    }
+
+
+
+
 
 .card-deck{
     margin-top: 40px;
@@ -12,32 +109,38 @@ li{
     margin:15px;
     text-align: center;
    margin-left: 100px;
-}
-
-.add-button{
-    width: 100%;
-   
-}
-
-#topnav{
-    width:100%;
-    height:   40px;
-    text-shadow: 10px 10px 8px #888888;
-
-}
-
-.card{
-    box-shadow: 10px 10px 8px #888888;
+   BORDER:none;
 }
 
 
-li{
-
-width:100%;
-height:100%;
-text-align:center;
-margin-right:40px ;
-text-decoration: none;
+ul{
+    outline: none;
 }
 
 
+
+
+.todo1,.todo,.todo11{
+  
+ width: 100%;
+      height: 50px;
+      text-indent: 18px;
+      border-radius: 25px;
+      background: #fff;
+      border: 0px;
+      box-shadow: none;
+      outline: black;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    
+}
+
+.del{
+    display: inline-block;
+    float:right;
+}
+
+i{
+    text-align: end;
+}
