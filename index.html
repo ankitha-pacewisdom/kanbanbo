@@ -9,30 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>    
-<script>
 
-$(function() {
-    $( ".sortable" ).sortable({
-      connectWith: ".connectedSortable",
-    }).disableSelection();
-  });
-   
-  
-  $(document).ready(function() {
-  $('.add-button').click(function() {
-    if (!$('#new_text').val()) {
-      alert('Enter a valid task!');
-    }
-    else if($('#new_text').val()) {
-      var txtNewItem = $('#new_text').val();
-        $(this).closest('div.container').find('ul:first').append('<li class="card">'+txtNewItem+'</li>');
-    }
-  })
-  });
-
-
-
-</script>
     
 <body> 
   <h2 class="topnav text-center">KANBAN BOARD</h2>
@@ -95,5 +72,29 @@ $(function() {
   </div>
 </div>
 </div>
+    <script>
+
+$(function() {
+    $( ".sortable" ).sortable({
+      connectWith: ".connectedSortable",
+    }).disableSelection();
+  });
+   
+  
+  $(document).ready(function() {
+  $('.add-button').click(function() {
+    if (!$('#new_text').val()) {
+      alert('Enter a valid task!');
+    }
+    else if($('#new_text').val()) {
+      var txtNewItem = $('#new_text').val();
+        $(this).closest('div.container').find('ul:first').append('<li class="card">'+txtNewItem+'</li>');
+    }
+  })
+  });
+
+
+
+</script>
 </body>
 </html>
